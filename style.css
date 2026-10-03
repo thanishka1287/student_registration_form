@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dff6f0, #b8e4ef, #dce9ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Main Card */
+.container {
+    width: 100%;
+    max-width: 680px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(35, 90, 100, 0.2);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+header h1 {
+    color: #145c68;
+    font-size: 29px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #718084;
+    font-size: 14px;
+}
+
+/* Form Sections */
+fieldset {
+    border: none;
+    background: #f4fbfa;
+    border-left: 5px solid #35a7a0;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #176b75;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34464a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbdde0;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #34464a;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #a2afb2;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #35a7a0;
+    box-shadow: 0 0 0 3px rgba(53, 167, 160, 0.12);
+}
+
+/* Gender */
+.radio-grp {
+    display: flex;
+    gap: 25px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.radio-grp label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #45585c;
+    cursor: pointer;
+}
+
+.radio-grp input {
+    width: auto;
+    accent-color: #24978f;
+}
+
+/* Register Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #238f91, #35b5a5);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #176f72, #269889);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(35, 143, 145, 0.25);
+}
+
+/* Status Message */
+#statusMessage {
+    text-align: center;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.success {
+    display: block;
+    background: #e0f6ed;
+    color: #176b4d;
+}
+
+.error {
+    display: block;
+    background: #ffe7e7;
+    color: #a32929;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    fieldset {
+        padding: 18px 14px;
+    }
+
+    .radio-grp {
+        gap: 15px;
+    }
+}
